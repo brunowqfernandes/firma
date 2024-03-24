@@ -15,4 +15,4 @@ jobs:
         username: hostcomb
         password: G+wr$7O3=ChU
         local-dir: /
-        server-dir: public_html/clientes24/firma
+        server-dir: public_html/clientes24/firma/
