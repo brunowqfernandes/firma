@@ -14,5 +14,4 @@ jobs:
         server: ftp.host86.com.br
         username: hostcomb
         password: G+wr$7O3=ChU
-        local-dir: /
         server-dir: public_html/clientes24/firma/
