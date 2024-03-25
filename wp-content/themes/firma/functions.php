@@ -7,6 +7,7 @@ function custom_theme_assets(){
     wp_enqueue_style('template', get_template_directory_uri() . '/css/style.css', array(),time(),'all');
 
 }
+add_action('wp_enqueue_scripts', 'custom_theme_assets');
 
 function estudio_config() {
 
