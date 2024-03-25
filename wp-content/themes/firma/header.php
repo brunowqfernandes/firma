@@ -14,8 +14,8 @@
           </div>
         </div>
       </div>
-      <button>
-
+      <button class="menu-toggle">
+        <img src="<?php echo get_template_directory_uri()?>/assets/img/menu.png" alt="">
       </button>
     </header>
     <div class="menu">
