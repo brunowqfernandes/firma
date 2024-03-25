@@ -8,12 +8,36 @@ function custom_theme_assets(){
 
 }
 
-add_action('wp_enqueue_scripts', 'custom_theme_assets');
+function estudio_config() {
 
-    
-add_theme_support('post-thumbnails', array(
-    'post',
-    'page',
-));
+    add_theme_support('post-thumbnails', array(
+        'post',
+        'page',
+        'material',
+        'servico',
+        'slide',
+    ));
+
+	// Registrando menus
+
+	register_nav_menus(
+
+		array(
+
+			'main_menu' => __('Menu Principal','estudio86')
+
+		)
+
+	);
+
+	add_theme_support('post-formats',array('video','image'));
+
+	add_theme_support('title-tag');
+
+	add_theme_support('custom-logo');	
+
+}
+
+add_action('after_setup_theme','estudio_config', 0);
 
 ?>
