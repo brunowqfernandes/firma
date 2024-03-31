@@ -31,7 +31,7 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
   color: #fff;
   padding: 86px 48px 48px;
   clip-path: circle(0% at 100% 0%);
-  transition: all 800ms ease-in-out;
+  transition: all 1200ms ease-in-out;
 }
 .menu-wrapper.open {
   clip-path: circle(1000% at 100% 0%);
