@@ -72,6 +72,8 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
   align-items: center;
   background-color: #000;
   color: #fff;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
