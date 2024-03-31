@@ -67,7 +67,10 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
 .hero {
   height: 100dvh;
   display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
