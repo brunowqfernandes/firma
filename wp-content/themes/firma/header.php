@@ -7,13 +7,7 @@
 </head>
 <body>
     <header>
-      <div class="container container-md">
-        <div class="row align-items-center">
-          <div class="col-md-3">
-            <?php the_custom_logo()?>
-          </div>
-        </div>
-      </div>
+      <?php the_custom_logo()?>
       <button class="menu-toggle">
         <img src="<?php echo get_template_directory_uri()?>/assets/img/menu.png" alt="">
       </button>
