@@ -1,6 +1,10 @@
 header {
   background-color: #000;
-  padding: 48px 48px 0;
+  padding: 48px 48px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 header .menu-toggle {
   position: fixed;
@@ -41,6 +45,10 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
 }
 .menu-wrapper ul li + li {
   margin-top: 4px;
+}
+
+.hero {
+  height: 100dvh;
 }
 
 /*# sourceMappingURL=style.css.map */
