@@ -11,3 +11,36 @@ header {
         }
     }
 }
+
+body:has(.menu-wrapper.open) .menu-toggle {
+    filter: none;
+}
+
+.menu-wrapper {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    color: #fff;
+    padding: 48px;
+    clip-path: circle(0% at 100% 100%);
+    &.open {
+        clip-path: circle(1000% at 100% 100%);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            a{
+                text-decoration: none;
+                color: inherit;
+                font-weight: bold;
+                font-size: 34px;
+            }
+            + li {
+                margin-top: 4px;
+            }
+        }
+    }
+}

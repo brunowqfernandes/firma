@@ -18,7 +18,7 @@
         <img src="<?php echo get_template_directory_uri()?>/assets/img/menu.png" alt="">
       </button>
     </header>
-    <div class="menu">
+    <div class="menu-wrapper">
       <?php wp_nav_menu(array( 'theme_location' => 'main_menu' )); ?>
     </div>
     <!-- <div class="parallax-wrapper">
