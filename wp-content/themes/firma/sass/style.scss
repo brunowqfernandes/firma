@@ -1,3 +1,4 @@
+$font1: "Times New Roman";
 header {
     padding: 48px 48px 12px;
     position: fixed;
@@ -80,4 +81,5 @@ body:has(.menu-wrapper.open) {
     color: #fff;
     font-weight: bold;
     font-size: 30px;
+    font-family: $font1;
 }
