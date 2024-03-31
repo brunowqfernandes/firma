@@ -29,7 +29,7 @@ body:has(.menu-wrapper.open) {
     inset: 0;
     background: #000;
     color: #fff;
-    padding: 48px;
+    padding: 86px 48px 48px;
     clip-path: circle(0% at 100% 100%);
     transition: all 500ms ease-in-out;
     &.open {
@@ -57,4 +57,6 @@ body:has(.menu-wrapper.open) {
 
 .hero {
     height: 100dvh;
+    display: flex;
+    align-items: center;
 }
