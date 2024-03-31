@@ -8,5 +8,8 @@ header .menu-toggle {
   background-color: transparent;
   border: 0;
 }
+header .menu-toggle.black img {
+  filter: brightness(0) saturate(0);
+}
 
 /*# sourceMappingURL=style.css.map */
