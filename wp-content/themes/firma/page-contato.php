@@ -11,6 +11,9 @@
         <?php dynamic_sidebar( 'barra-endereco' ); ?>
     <?php endif; ?>
   </div>
+  <div class="copy-text">
+    <p>©Studio Firma 2023. Todos os direitos reservados.</p>
+  </div>
 </main>
 
 <?php
