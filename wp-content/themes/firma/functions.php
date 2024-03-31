@@ -31,6 +31,16 @@ function estudio_config() {
 
 	);
 
+    register_sidebar( array(
+        'name' => __( 'Endereço', 'estudio86' ),
+        'id' => 'barra-endereco',
+        'description' => __( 'Arraste os widgets para esta área para adicioná-los à barra lateral.', 'estudio86' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
 	add_theme_support('post-formats',array('video','image'));
 
 	add_theme_support('title-tag');
@@ -40,5 +50,6 @@ function estudio_config() {
 }
 
 add_action('after_setup_theme','estudio_config', 0);
+
 
 ?>
