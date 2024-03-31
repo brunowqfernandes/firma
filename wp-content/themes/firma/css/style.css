@@ -6,6 +6,9 @@ header {
   width: 100%;
   z-index: 99;
 }
+header .custom-logo-link img {
+  filter: brightness(0) saturate(0);
+}
 header .menu-toggle {
   position: absolute;
   top: 48px;
