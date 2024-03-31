@@ -13,13 +13,15 @@
       </button>
     </header>
     <div class="menu-wrapper">
-      <?php wp_nav_menu(array( 'theme_location' => 'main_menu' )); ?>
+      <div class="menu-content">
+        <?php wp_nav_menu(array( 'theme_location' => 'main_menu' )); ?>
+      </div>
       <div class="menu-footer">
-      <p>@studio_firma / @vimervm</p>
-      <p>
-        studiofirma@studiofirma.com.br <br>
-        Rua Patizal, 62, Vila Madalena São Paulo-SP <br>
-        Trabalhos Arquivo Clientes Loja Contato 
-      </p>
+        <p>@studio_firma / @vimervm</p>
+        <p>
+          studiofirma@studiofirma.com.br <br>
+          Rua Patizal, 62, Vila Madalena São Paulo-SP <br>
+          Trabalhos Arquivo Clientes Loja Contato 
+        </p>
       </div>
     </div>
