@@ -14,6 +14,7 @@ header .menu-toggle {
   border: 0;
   filter: brightness(0) saturate(0);
   transition: all 800ms ease-in-out;
+  transition-delay: 300ms;
 }
 header .menu-toggle.black img {
   filter: brightness(0) saturate(0);
