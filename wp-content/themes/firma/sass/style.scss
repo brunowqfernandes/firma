@@ -85,16 +85,21 @@ body:has(.menu-wrapper.open) {
     line-height: 1;
 }
 
-.map {
-    iframe {
-        width: 100%;
-        max-width: 896px;
-        aspect-ratio: 896/703;
+.contato {
+    padding: 86px 48px 48px;
+    .map {
+        margin-bottom: 74px;
+        iframe {
+            width: 100%;
+            max-width: 896px;
+            aspect-ratio: 896/703;
+        }
+    }
+
+    .copy-text {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 16px;
     }
 }
 
-.copy-text {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 16px;
-}
