@@ -5,8 +5,10 @@ header {
     left: 0;
     width: 100%;
     z-index: 99;
-    .custom-logo-link img {
+    .custom-logo-link {
         filter: brightness(0) saturate(0);
+        transition: all 800ms ease-in-out;
+        transition-delay: 300ms;
     }
     .menu-toggle {
         position: absolute;
@@ -37,6 +39,9 @@ body:has(.menu-wrapper.open) {
     padding: 166px 48px 48px;
     clip-path: circle(0% at 100% 0%);
     transition: all 1200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &.open {
         clip-path: circle(1000% at 100% 0%);
     }
@@ -58,7 +63,7 @@ body:has(.menu-wrapper.open) {
         }
     }
     .menu-footer {
-        font-weight: 500;
+        font-weight: 400;
         color: #fff;
         font-size: 24px;
     }
