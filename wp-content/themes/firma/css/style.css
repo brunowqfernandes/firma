@@ -13,6 +13,7 @@ header .menu-toggle {
   background-color: transparent;
   border: 0;
   filter: brightness(0) saturate(0);
+  transition: all 800ms ease-in-out;
 }
 header .menu-toggle.black img {
   filter: brightness(0) saturate(0);
@@ -28,11 +29,11 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
   background: #000;
   color: #fff;
   padding: 86px 48px 48px;
-  clip-path: circle(0% at 100% 100%);
-  transition: all 500ms ease-in-out;
+  clip-path: circle(0% at 100% 0%);
+  transition: all 800ms ease-in-out;
 }
 .menu-wrapper.open {
-  clip-path: circle(1000% at 100% 100%);
+  clip-path: circle(1000% at 100% 0%);
 }
 .menu-wrapper ul {
   list-style-type: none;
