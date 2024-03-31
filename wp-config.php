@@ -29,7 +29,7 @@ define( 'DB_USER', 'hostcomb_firma' );
 define( 'DB_PASSWORD', 'oito@meia' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '192.169.81.138' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8mb4' );
