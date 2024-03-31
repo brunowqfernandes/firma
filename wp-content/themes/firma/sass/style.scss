@@ -31,6 +31,7 @@ body:has(.menu-wrapper.open) {
     color: #fff;
     padding: 48px;
     clip-path: circle(0% at 100% 100%);
+    transition: all 500ms ease-in-out;
     &.open {
         clip-path: circle(1000% at 100% 100%);
     }
