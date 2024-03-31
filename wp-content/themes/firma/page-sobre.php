@@ -3,7 +3,7 @@
 ?>
 
 <main>
-  <div class="hero" style="background: url(<?php echo get_field('background_sobre')?>)">
+  <div class="hero" style="background-image: url(<?php echo get_field('background_sobre')?>)">
         <?php echo nl2br(get_field('texto_sobre'))?>
   </div>
 
