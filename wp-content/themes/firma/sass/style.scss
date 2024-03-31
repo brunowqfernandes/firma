@@ -34,7 +34,7 @@ body:has(.menu-wrapper.open) {
     inset: 0;
     background: #000;
     color: #fff;
-    padding: 86px 48px 48px;
+    padding: 166px 48px 48px;
     clip-path: circle(0% at 100% 0%);
     transition: all 1200ms ease-in-out;
     &.open {
@@ -56,6 +56,11 @@ body:has(.menu-wrapper.open) {
                 margin-top: 4px;
             }
         }
+    }
+    .menu-footer {
+        font-weight: 500;
+        color: #fff;
+        font-size: 24px;
     }
 }
 

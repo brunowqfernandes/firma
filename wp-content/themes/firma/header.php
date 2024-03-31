@@ -14,15 +14,12 @@
     </header>
     <div class="menu-wrapper">
       <?php wp_nav_menu(array( 'theme_location' => 'main_menu' )); ?>
+      <div class="menu-footer">
+      <p>@studio_firma / @vimervm</p>
+      <p>
+        studiofirma@studiofirma.com.br <br>
+        Rua Patizal, 62, Vila Madalena São Paulo-SP <br>
+        Trabalhos Arquivo Clientes Loja Contato 
+      </p>
+      </div>
     </div>
-    <!-- <div class="parallax-wrapper">
-      <div>
-        <img class="parallax" src="<?php echo get_template_directory_uri()?>/assets/img/parallax/img_paralax-01.png" alt="">
-      </div>
-      <div>
-        <img class="parallax" src="<?php echo get_template_directory_uri()?>/assets/img/parallax/img_paralax-02.png" alt="">
-      </div>
-      <div>
-        <img class="parallax" src="<?php echo get_template_directory_uri()?>/assets/img/parallax/img_paralax-03.png" alt="">
-      </div>
-    </div> -->
