@@ -21,6 +21,10 @@ header .menu-toggle {
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
 }
+header .menu-toggle:active, header .menu-toggle:focus, header .menu-toggle:focus-visible {
+  outline: none;
+  border: 0;
+}
 header .menu-toggle.black img {
   filter: brightness(0) saturate(0);
 }
@@ -42,7 +46,7 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
   justify-content: space-between;
 }
 .menu-wrapper.open {
-  clip-path: circle(1000% at 100% 0%);
+  clip-path: circle(200% at 100% 0%);
 }
 .menu-wrapper ul {
   list-style-type: none;
@@ -89,10 +93,11 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
   max-width: 896px;
   aspect-ratio: 896/703;
 }
-.contato .copy-text {
+.contato .copy-text p {
   font-size: 16px;
   font-weight: bold;
   margin-top: 16px;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
