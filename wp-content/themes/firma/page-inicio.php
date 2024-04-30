@@ -15,7 +15,7 @@
             while ( $the_query->have_posts() ) {
               $the_query->the_post();
         ?>
-            <div class="swiper-slide" background-image: url(<?php echo get_field('imagem_banner');?>)>
+            <div class="swiper-slide" style="background-image: url(<?php echo get_field('imagem_banner');?>)">
               <a href="<?php echo get_the_permalink()?>"></a>
             </div>
         <?php
