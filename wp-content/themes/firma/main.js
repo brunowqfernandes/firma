@@ -13,6 +13,7 @@ window.onload = (e) => {
       delay: 100,
     },
     pauseOnMouseEnter: true,
+    effect: 'fade',
   
     // Navigation arrows
     navigation: {
