@@ -9,6 +9,10 @@ window.onload = (e) => {
     // Optional parameters
     direction: 'vertical',
     loop: true,
+    autoplay: {
+      delay: 100,
+    },
+    pauseOnMouseEnter: true,
   
     // Navigation arrows
     navigation: {
