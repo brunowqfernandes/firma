@@ -24,9 +24,6 @@
           wp_reset_postdata();          
         ?>
       </div>
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>    
     <?php echo nl2br(get_field('texto_banner'))?>
   </div>
