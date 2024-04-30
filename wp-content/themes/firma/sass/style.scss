@@ -93,6 +93,12 @@ body:has(.menu-wrapper.open) {
         height: 100%;
         position: absolute;
         z-index: -1;
+        .swiper-slide {
+            a {
+                position: absolute;
+                inset: 0;
+            }
+        }
     }
 }
 

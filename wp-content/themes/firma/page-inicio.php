@@ -3,15 +3,26 @@
 ?>
 
 <main>
-  <div class="hero" style="background-image: url(<?php echo get_field('background_banner')?>)">
+  <div class="hero">
     <div class="swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <?php $contador = 1;
-          while(get_field('background_banner_imagem_'.$contador):?>
-            <div class="swiper-slide" background-image: url(<?php echo get_field('background_banner_imagem_'.$contador); $contador++?>)></div>
-        <?php endwhile;?>
+        <?php
+          $the_query = new WP_Query('post_type=projeto');
+          if ( $the_query->have_posts() ) {
+
+            while ( $the_query->have_posts() ) {
+              $the_query->the_post();
+        ?>
+            <div class="swiper-slide" background-image: url(<?php echo get_field('imagem_banner');?>)>
+              <a href="<?php echo get_the_permalink()?>"></a>
+            </div>
+        <?php
+            }
+          } 
+          wp_reset_postdata();          
+        ?>
       </div>
       <!-- If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
