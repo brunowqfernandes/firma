@@ -14,12 +14,6 @@ window.onload = (e) => {
     },
     pauseOnMouseEnter: true,
     effect: 'fade',
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
   });
 }
 
