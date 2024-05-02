@@ -509,6 +509,20 @@ body.loading .hero {
   justify-content: center;
   padding: 86px 48px 48px;
 }
+.equipe .foto {
+  position: relative;
+}
+.equipe .foto h2 {
+  color: #fff;
+  font-family: "Times New Roman";
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .contato {
   padding: 86px 48px 48px;

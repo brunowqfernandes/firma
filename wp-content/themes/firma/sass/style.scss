@@ -226,6 +226,20 @@ body.loading {
         justify-content: center;
         padding: 86px 48px 48px;
     }
+    .foto {
+        position: relative;
+        h2 {
+            color: #fff;
+            font-family: $font1;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 .contato {
