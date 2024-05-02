@@ -522,6 +522,7 @@ body.loading .hero {
 .time .swiper .swiper-button-next {
   color: #fff;
   top: 90%;
+  z-index: 10;
 }
 .time .swiper .swiper-button-prev {
   left: auto;

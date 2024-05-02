@@ -32,6 +32,10 @@ window.onload = (e) => {
     loop: true,
     autoplay: autoplay,
     effect: 'fade',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 }
 

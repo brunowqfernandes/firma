@@ -241,6 +241,7 @@ body.loading {
         .swiper-button-next {
             color: #fff;
             top: 90%;
+            z-index: 10;
         }
         .swiper-button-prev {
             left: auto;
