@@ -501,6 +501,7 @@ body.loading .hero {
 }
 .time .swiper .swiper-slide {
   display: flex;
+  background-color: #fff;
 }
 .time .swiper .swiper-slide > div {
   flex: 1 1 50%;
@@ -517,6 +518,9 @@ body.loading .hero {
 }
 .time .foto {
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .time .foto h2 {
   color: #fff;

@@ -217,6 +217,7 @@ body.loading {
         height: 100%;
         .swiper-slide {
             display: flex;
+            background-color: #fff;
             > div {
                 flex: 1 1 50%;
             }
@@ -234,6 +235,9 @@ body.loading {
     }
     .foto {
         position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         h2 {
             color: #fff;
             font-family: $font1;
