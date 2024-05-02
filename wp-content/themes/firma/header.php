@@ -5,7 +5,7 @@
 	<?php wp_head(); ?>
 
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header>
       <?php the_custom_logo()?>
       <button class="menu-toggle">
