@@ -10,8 +10,8 @@
 
 <main class="time">
     <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper" data-swiper-autoplay="false">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" data-swiper-autoplay="false">
         <!-- Slides -->
         <?php
           $the_query = new WP_Query('post_type=membro');
@@ -33,7 +33,9 @@
           } 
           wp_reset_postdata();          
         ?>
-      </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>    
     
 </main>
