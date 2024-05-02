@@ -7,7 +7,6 @@ header {
     width: 100%;
     z-index: 99;
     .custom-logo-link {
-        filter: brightness(0) saturate(0);
         transition: all 800ms ease-in-out;
         transition-delay: 300ms;
     }
@@ -17,15 +16,11 @@ header {
         right: 48px;
         background-color: transparent;
         border: 0;
-        filter: brightness(0) saturate(0);
         transition: all 800ms ease-in-out;
         transition-delay: 300ms;
         &:active, &:focus, &:focus-visible {
             outline: none;
             border: 0;
-        }
-        &.black img {
-            filter: brightness(0) saturate(0);
         }
     }
 }
@@ -37,6 +32,9 @@ body:has(.menu-wrapper.open) {
 }
 
 body.loading {
+    header .custom-logo-link, header .menu-toggle {
+        filter: brightness(0) saturate(0);
+    }
     .hero {
         color: #000;
     }

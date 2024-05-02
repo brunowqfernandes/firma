@@ -7,7 +7,6 @@ header {
   z-index: 99;
 }
 header .custom-logo-link {
-  filter: brightness(0) saturate(0);
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
 }
@@ -17,7 +16,6 @@ header .menu-toggle {
   right: 48px;
   background-color: transparent;
   border: 0;
-  filter: brightness(0) saturate(0);
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
 }
@@ -25,14 +23,14 @@ header .menu-toggle:active, header .menu-toggle:focus, header .menu-toggle:focus
   outline: none;
   border: 0;
 }
-header .menu-toggle.black img {
-  filter: brightness(0) saturate(0);
-}
 
 body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-logo-link {
   filter: none;
 }
 
+body.loading header .custom-logo-link, body.loading header .menu-toggle {
+  filter: brightness(0) saturate(0);
+}
 body.loading .hero {
   color: #000;
 }
