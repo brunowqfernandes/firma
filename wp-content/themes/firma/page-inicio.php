@@ -4,6 +4,9 @@
 
 <main>
   <div class="hero">
+    <div class="loading-wrapper">
+      <span id="loading-text">0%</span>
+    </div>
     <div class="swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
