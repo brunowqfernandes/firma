@@ -34,7 +34,7 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
 }
 
 body.loading .hero {
-  color: #fff;
+  color: #000;
 }
 
 .menu-wrapper {
