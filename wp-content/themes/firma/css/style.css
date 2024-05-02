@@ -499,6 +499,12 @@ body.loading .hero {
   width: 100%;
   height: 100%;
 }
+.time .swiper .swiper-slide {
+  display: flex;
+}
+.time .swiper .swiper-slide > div {
+  flex: 1 1 50%;
+}
 .time .descricao {
   text-align: right;
   font-family: "Times New Roman";

@@ -215,6 +215,12 @@ body.loading {
     .swiper {
         width: 100%;
         height: 100%;
+        .swiper-slide {
+            display: flex;
+            > div {
+                flex: 1 1 50%;
+            }
+        }
     }
     .descricao {
         text-align: right;

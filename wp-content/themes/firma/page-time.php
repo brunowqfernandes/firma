@@ -2,6 +2,12 @@
   get_header();
 ?>
 
+<style>
+  header .custom-logo-link {
+    filter: brightness(0) saturate(0);
+  }
+</style>
+
 <main class="time">
     <div class="swiper">
       <!-- Additional required wrapper -->
