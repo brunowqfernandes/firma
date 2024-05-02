@@ -104,7 +104,6 @@ body.loading .hero {
   transition: opacity 600ms;
   position: absolute;
   inset: 0;
-  z-index: -1;
 }
 .hero .swiper {
   width: 100%;
