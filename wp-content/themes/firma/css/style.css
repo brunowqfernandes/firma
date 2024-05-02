@@ -492,14 +492,14 @@ body.loading .hero {
   color: #959595;
 }
 
-.equipe {
+.time {
   height: 100vh;
 }
-.equipe .swiper {
+.time .swiper {
   width: 100%;
   height: 100%;
 }
-.equipe .descricao {
+.time .descricao {
   text-align: right;
   font-family: "Times New Roman";
   font-weight: 700;
@@ -509,10 +509,10 @@ body.loading .hero {
   justify-content: center;
   padding: 86px 48px 48px;
 }
-.equipe .foto {
+.time .foto {
   position: relative;
 }
-.equipe .foto h2 {
+.time .foto h2 {
   color: #fff;
   font-family: "Times New Roman";
   font-size: 30px;
