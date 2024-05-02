@@ -138,6 +138,7 @@ body.loading .hero {
 .trabalhos .projetos ul {
   list-style-type: none;
   font-family: "Neue Haas Grotesk Display";
+  font-size: 24px;
 }
 .trabalhos .projetos ul li {
   border-bottom: 1px solid #EFEFEF;
