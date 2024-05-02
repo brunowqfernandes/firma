@@ -126,19 +126,18 @@ body.loading .hero {
 
 .contato {
   padding: 86px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 .contato .map {
   margin-bottom: 74px;
+  flex: 1;
 }
 .contato .map iframe {
   width: 100%;
   max-width: 896px;
-  aspect-ratio: 896/703;
-}
-@media (min-width: 768px) and (max-width: 1600px) {
-  .contato .map iframe {
-    max-height: 40vh;
-  }
+  height: 100%;
 }
 .contato .copy-text p {
   font-size: 16px;

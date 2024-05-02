@@ -139,15 +139,17 @@ body.loading {
 
 .contato {
     padding: 86px 48px 48px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
     .map {
         margin-bottom: 74px;
+        flex: 1;
         iframe {
             width: 100%;
             max-width: 896px;
-            aspect-ratio: 896/703;
-            @media (min-width: 768px) and (max-width: 1600px) {
-                max-height: 40vh;
-            }
+            height: 100%;
         }
     }
 
