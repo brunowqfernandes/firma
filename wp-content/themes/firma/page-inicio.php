@@ -28,7 +28,7 @@
         ?>
       </div>
     </div>    
-    <?php echo nl2br(get_field('texto_banner'))?>
+    <p class="texto-home"><?php echo nl2br(get_field('texto_banner', false, false))?></p>
   </div>
 
 </main>

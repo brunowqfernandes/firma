@@ -95,6 +95,10 @@ body.loading {
     line-height: 1;
     z-index: 1;
     position: relative;
+    .texto-home {
+        position: relative;
+        z-index: 100;
+    }
 
     .loading-wrapper {
         background-color: #fff;

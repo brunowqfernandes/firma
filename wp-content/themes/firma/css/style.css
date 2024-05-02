@@ -87,6 +87,10 @@ body.loading .hero {
   z-index: 1;
   position: relative;
 }
+.hero .texto-home {
+  position: relative;
+  z-index: 100;
+}
 .hero .loading-wrapper {
   background-color: #fff;
   width: 100%;
