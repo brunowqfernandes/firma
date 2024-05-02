@@ -210,6 +210,13 @@ body.loading {
     }
 }
 
+.equipe {
+    display: flex;
+    > div {
+        flex: 1;
+    }
+}
+
 .contato {
     padding: 86px 48px 48px;
     display: flex;

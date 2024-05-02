@@ -492,6 +492,13 @@ body.loading .hero {
   color: #959595;
 }
 
+.equipe {
+  display: flex;
+}
+.equipe > div {
+  flex: 1;
+}
+
 .contato {
   padding: 86px 48px 48px;
   display: flex;
