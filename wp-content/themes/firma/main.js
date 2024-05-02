@@ -16,7 +16,7 @@ window.onload = (e) => {
         loading.style.opacity = 0;
         clearInterval(interval);
       }
-    }, 200);
+    }, 80);
   }
   const menuButton = document.querySelector('.menu-toggle');
   const menuWrapper = document.querySelector('.menu-wrapper');
