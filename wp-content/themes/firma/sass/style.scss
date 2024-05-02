@@ -143,13 +143,19 @@ body.loading {
         flex: 2;
         max-width: 1000px;
         padding-right: 30px;
-        img + img {
-            margin-top: 24px;
+        img {
+            width: 100%;
+            height: auto;
+            + img {
+                margin-top: 24px;
+            }
         }
     }
     .descricao {
         font-family: $font2;
         font-size: 24px;
+        flex: 1;
+        max-width: 588px;
         h2 {
             font-size: 40px;
             font-weight: 500;

@@ -132,12 +132,18 @@ body.loading .hero {
   max-width: 1000px;
   padding-right: 30px;
 }
+.trabalho .fotos img {
+  width: 100%;
+  height: auto;
+}
 .trabalho .fotos img + img {
   margin-top: 24px;
 }
 .trabalho .descricao {
   font-family: "Neue Haas Grotesk Display";
   font-size: 24px;
+  flex: 1;
+  max-width: 588px;
 }
 .trabalho .descricao h2 {
   font-size: 40px;
