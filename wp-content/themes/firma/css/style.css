@@ -438,6 +438,8 @@ body.loading .hero {
 }
 .trabalhos .fotos .foto-projeto {
   display: none;
+  width: 100%;
+  height: auto;
 }
 .trabalhos .projetos {
   flex: 1;
