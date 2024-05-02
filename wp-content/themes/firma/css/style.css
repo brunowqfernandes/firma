@@ -90,7 +90,6 @@ body.loading .hero {
 .hero .texto-home {
   position: relative;
   z-index: 100;
-  color: inherit;
 }
 .hero .loading-wrapper {
   background-color: #fff;
