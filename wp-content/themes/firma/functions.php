@@ -218,7 +218,7 @@ function create_post_types() {
    
      $labels = array(
    
-       'name'                =>  'Membro',
+       'name'                =>  'Equipe',
    
        'singular_name'       =>  'Membro',
    
