@@ -106,7 +106,7 @@ body.loading {
         justify-content: flex-end;
         color: rgba(#959595, .2);
         font-size: 240px;
-        transition: 300ms;
+        transition: opacity 300ms;
         position: absolute;
         inset: 0;
         z-index: -1;
