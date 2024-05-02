@@ -212,8 +212,19 @@ body.loading {
 
 .equipe {
     display: flex;
+    height: 100vh;
     > div {
         flex: 1;
+    }
+    .descricao {
+        text-align: right;
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 86px 48px 48px;
     }
 }
 

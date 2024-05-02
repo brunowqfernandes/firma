@@ -494,9 +494,20 @@ body.loading .hero {
 
 .equipe {
   display: flex;
+  height: 100vh;
 }
 .equipe > div {
   flex: 1;
+}
+.equipe .descricao {
+  text-align: right;
+  font-family: "Times New Roman";
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 86px 48px 48px;
 }
 
 .contato {
