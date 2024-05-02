@@ -5,7 +5,7 @@
 <main class="time">
     <div class="swiper">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper" data-swiper-autoplay="false">
         <!-- Slides -->
         <?php
           $the_query = new WP_Query('post_type=membro');
