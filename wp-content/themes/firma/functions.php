@@ -169,6 +169,122 @@ function create_post_types() {
     
    
      register_post_type( 'projeto', $args );
+     
+     $taxlabels = array(
+   
+       'name' => _x( 'cat_equipes', 'Categorias de projetos' ),
+   
+       'singular_name' => _x( 'cat_equipe', 'Categoria de equipe' ),
+   
+       'search_items' =>  __( 'Pesquisar' ),
+   
+       'all_items' => __( 'Todas as Categorias de equipes' ),
+   
+       'parent_item' => __( 'Categoria Pai' ),
+   
+       'parent_item_colon' => __( 'Categoria Pai:' ),
+   
+       'edit_item' => __( 'Editar' ), 
+   
+       'update_item' => __( 'Atualizar' ),
+   
+       'add_new_item' => __( 'Adicionar novo' ),
+   
+       'new_item_name' => __( 'Novo Nome' ),
+   
+       'menu_name' => __( 'Categorias Equipes' ),
+   
+     ); 
+   
+     // Now register the taxonomy
+   
+    
+   
+     register_taxonomy('cat_equipes',array('membro'), array(
+   
+       'hierarchical' => true,
+   
+       'labels' => $taxlabels,
+   
+       'show_ui' => true,
+   
+       'show_admin_column' => true,
+   
+       'query_var' => true,
+   
+       'rewrite' => array( 'slug' => 'cat_equipe' ),
+   
+     ));   
+   
+     $labels = array(
+   
+       'name'                =>  'Membro',
+   
+       'singular_name'       =>  'Membro',
+   
+       'add_new'             =>  'Adicionar Novo',
+   
+       'add_new_item'        =>  'Adicionar Novo Membro',
+   
+       'edit_item'           =>  'Editar Membro',
+   
+       'new_item'            =>  'Novo Membro',
+   
+       'all_items'           =>  'Todos Membros',
+   
+       'view_item'           =>  'Ver Membro',
+   
+       'search_items'        =>  'Pesquisar Membros',
+   
+       'not_found'           =>  'Nenhum Membro encontrado',
+   
+       'not_found_in_trash'  =>  'Nenhum Membro no Lixo',
+   
+       'menu_name'           =>  'Equipe',
+   
+     );
+   
+    
+   
+     $supports = array( 'title', 'editor', 'thumbnail' );
+   
+    
+   
+    
+   
+     $args = array(
+   
+       'labels'              => $labels,
+   
+       'public'              => true,
+   
+       'publicly_queryable'  => true,
+   
+       'show_ui'             => true,
+   
+       'show_in_menu'        => true,
+   
+       'query_var'           => true,
+   
+       'taxonomies'  => array( 'cat_equipes' ),
+   
+       'capability_type'     => 'post',
+   
+       'has_archive'         => 'cat_equipes',
+   
+       'hierarchical'        => false,
+   
+       'menu_position'       => 4,
+   
+       'show_in_rest'        => true,
+   
+       'supports'            => $supports,
+   
+     );
+   
+    
+   
+     register_post_type( 'membro', $args );
 
 }
 add_action( 'init', 'create_post_types' );
