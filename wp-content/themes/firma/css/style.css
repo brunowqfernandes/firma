@@ -126,6 +126,7 @@ body.loading .hero {
 
 .trabalho {
   padding: 86px 160px 48px 48px;
+  display: flex;
 }
 .trabalho .fotos {
   flex: 2;
