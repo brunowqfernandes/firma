@@ -128,7 +128,7 @@ body.loading .hero {
   padding: 86px 48px 48px;
   display: flex;
 }
-.trabalhos:not(:has(.projetos li:hover)) .projetos li:first-child {
+.trabalhos:not(:has(.projetos li:hover)) .foto-projeto:first-child {
   display: block;
 }
 .trabalhos:has(.projetos li:nth-child(1):hover) .foto-projeto:nth-child(1) {

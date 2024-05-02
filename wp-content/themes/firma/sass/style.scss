@@ -140,7 +140,7 @@ body.loading {
 .trabalhos {
     padding: 86px 48px 48px;
     display: flex;
-    &:not(:has(.projetos li:hover)) .projetos li:first-child {
+    &:not(:has(.projetos li:hover)) .foto-projeto:first-child {
         display: block;
     }
     @for $i from 1 through 100 {
