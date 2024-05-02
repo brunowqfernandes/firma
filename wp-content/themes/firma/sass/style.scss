@@ -141,6 +141,9 @@ body.loading {
     padding: 86px 48px 48px;
     display: flex;
     @for $i from 1 through 100 {
+        &:not(:has(.projetos li:hover)) .projetos li:first-child {
+            display: block;
+        }
         &:has(.projetos li:nth-child(#{$i}):hover) .foto-projeto:nth-child(#{$i}) {
             display: block;
         }
