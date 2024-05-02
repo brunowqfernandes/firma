@@ -211,10 +211,10 @@ body.loading {
 }
 
 .equipe {
-    display: flex;
     height: 100vh;
-    > div {
-        flex: 1;
+    .swiper {
+        width: 100%;
+        height: 100%;
     }
     .descricao {
         text-align: right;
