@@ -56,6 +56,122 @@ add_action('after_setup_theme','estudio_config', 0);
 function create_post_types() {
      $taxlabels = array(
    
+       'name' => _x( 'cat_clientes', 'Categorias de clientes' ),
+   
+       'singular_name' => _x( 'cat_cliente', 'Categoria de cliente' ),
+   
+       'search_items' =>  __( 'Pesquisar' ),
+   
+       'all_items' => __( 'Todas as Categorias de clientes' ),
+   
+       'parent_item' => __( 'Categoria Pai' ),
+   
+       'parent_item_colon' => __( 'Categoria Pai:' ),
+   
+       'edit_item' => __( 'Editar' ), 
+   
+       'update_item' => __( 'Atualizar' ),
+   
+       'add_new_item' => __( 'Adicionar novo' ),
+   
+       'new_item_name' => __( 'Novo Nome' ),
+   
+       'menu_name' => __( 'Categorias clientes' ),
+   
+     ); 
+   
+     // Now register the taxonomy
+   
+    
+   
+     register_taxonomy('cat_clientes',array('cliente'), array(
+   
+       'hierarchical' => true,
+   
+       'labels' => $taxlabels,
+   
+       'show_ui' => true,
+   
+       'show_admin_column' => true,
+   
+       'query_var' => true,
+   
+       'rewrite' => array( 'slug' => 'cat_clientes=' ),
+   
+     ));   
+   
+     $labels = array(
+   
+       'name'                =>  'Cliente',
+   
+       'singular_name'       =>  'Cliente',
+   
+       'add_new'             =>  'Adicionar Novo',
+   
+       'add_new_item'        =>  'Adicionar Novo Cliente',
+   
+       'edit_item'           =>  'Editar Cliente',
+   
+       'new_item'            =>  'Novo Cliente',
+   
+       'all_items'           =>  'Todos Clientes',
+   
+       'view_item'           =>  'Ver Cliente',
+   
+       'search_items'        =>  'Pesquisar Clientes',
+   
+       'not_found'           =>  'Nenhum Cliente encontrado',
+   
+       'not_found_in_trash'  =>  'Nenhum Cliente no Lixo',
+   
+       'menu_name'           =>  'Clientes',
+   
+     );
+   
+    
+   
+     $supports = array( 'title', 'editor', 'thumbnail' );
+   
+    
+   
+    
+   
+     $args = array(
+   
+       'labels'              => $labels,
+   
+       'public'              => true,
+   
+       'publicly_queryable'  => true,
+   
+       'show_ui'             => true,
+   
+       'show_in_menu'        => true,
+   
+       'query_var'           => true,
+   
+       'taxonomies'  => array( 'cat_clientes' ),
+   
+       'capability_type'     => 'post',
+   
+       'has_archive'         => 'cat_clientes',
+   
+       'hierarchical'        => false,
+   
+       'menu_position'       => 4,
+   
+       'show_in_rest'        => true,
+   
+       'supports'            => $supports,
+   
+     );
+   
+    
+   
+     register_post_type( 'cliente', $args );
+     
+     $taxlabels = array(
+   
        'name' => _x( 'cat_projetos', 'Categorias de projetos' ),
    
        'singular_name' => _x( 'cat_projeto', 'Categoria de projeto' ),
