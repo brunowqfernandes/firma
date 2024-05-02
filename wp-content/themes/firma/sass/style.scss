@@ -137,8 +137,29 @@ body.loading {
     }
 }
 
+.trabalho {
+    padding: 86px 160px 48px 48px;
+    .fotos {
+        flex: 2;
+        max-width: 1000px;
+        padding-right: 30px;
+        img + img {
+            margin-top: 24px;
+        }
+    }
+    .descricao {
+        font-family: $font2;
+        font-size: 24px;
+        h2 {
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 48px;
+        }
+    }
+}
+
 .trabalhos {
-    padding: 86px 48px 48px;
+    padding: 86px 160px 48px 48px;
     display: flex;
     &:not(:has(.projetos li:hover)) .foto-projeto:first-child {
         display: block;
