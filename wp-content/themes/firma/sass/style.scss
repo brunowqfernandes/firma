@@ -1,4 +1,6 @@
+@import url('../fonts/neueHassGrotesk/stylesheet.css');
 $font1: "Times New Roman";
+$font2: "Neue Haas Grotesk Display";
 header {
     padding: 48px 48px 12px;
     position: fixed;
@@ -51,6 +53,7 @@ body.loading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 10;
     &.open {
         clip-path: circle(200% at 100% 0%);
     }
@@ -65,6 +68,7 @@ body.loading {
                 color: inherit;
                 font-weight: bold;
                 font-size: 34px;
+                font-family: $font2;
             }
             + li {
                 margin-top: 4px;
@@ -108,6 +112,7 @@ body.loading {
         justify-content: flex-end;
         color: rgba(#959595, .2);
         font-size: 240px;
+        font-family: $font2;
         transition: opacity 600ms;
         position: absolute;
         inset: 0;
@@ -140,6 +145,9 @@ body.loading {
             width: 100%;
             max-width: 896px;
             aspect-ratio: 896/703;
+            @media (min-width: 768px) and (max-width: 1600px) {
+                max-height: 40vh;
+            }
         }
     }
 
