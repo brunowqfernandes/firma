@@ -30,8 +30,8 @@ window.onload = (e) => {
     loop: true,
     autoplay: {
       delay: 100,
+      pauseOnMouseEnter: true,
     },
-    pauseOnMouseEnter: true,
     effect: 'fade',
   });
 }
