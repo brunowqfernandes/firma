@@ -23,15 +23,14 @@ window.onload = (e) => {
   menuButton.addEventListener('click', function () {
     menuWrapper.classList.toggle('open');
   })
-
+  const autoplay = (loading) ? {
+    delay: 100,
+    pauseOnMouseEnter: true,
+  } : false;
   const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
     loop: true,
-    autoplay: {
-      delay: 100,
-      pauseOnMouseEnter: true,
-    },
+    autoplay: autoplay,
     effect: 'fade',
   });
 }
