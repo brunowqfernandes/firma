@@ -18,7 +18,7 @@
                         while ( $the_query->have_posts() ) {
                             $the_query->the_post();
                 ?>
-                            <div class="foto-projeto" style="background-image: url(<?php echo get_field('imagem_banner');?>)"></div>
+                            <img class="foto-projeto" src="<?php echo get_field('imagem_banner')?>">
                 <?php 
                         }
                 ?>

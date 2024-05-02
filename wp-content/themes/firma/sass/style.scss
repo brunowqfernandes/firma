@@ -140,8 +140,18 @@ body.loading {
 .trabalhos {
     padding: 86px 48px 48px;
     display: flex;
+    @for $i from 1 through 100 {
+        &:has(.projetos li:nth-child(#{$i}):hover) .foto-projeto:nth-child(#{$i}) {
+            display: block;
+        }
+    }
     .fotos {
         flex: 2;
+        max-width: 1000px;
+        padding-right: 30px;
+        .foto-projeto {
+            display: none;
+        }
     }
     .projetos {
         flex: 1;
@@ -150,6 +160,8 @@ body.loading {
             list-style-type: none;
             font-family: $font2;
             font-size: 24px;
+            padding: 0;
+            margin: 0;
             li {
                 border-bottom: 1px solid #EFEFEF;
                 a {
