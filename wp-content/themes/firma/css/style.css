@@ -124,6 +124,33 @@ body.loading .hero {
   inset: 0;
 }
 
+.trabalhos {
+  padding: 86px 48px 48px;
+  display: flex;
+}
+.trabalhos .fotos {
+  flex: 2;
+}
+.trabalhos .projetos {
+  flex: 1;
+  max-width: 588px;
+}
+.trabalhos .projetos ul {
+  list-style-type: none;
+  font-family: "Neue Haas Grotesk Display";
+}
+.trabalhos .projetos ul li {
+  border-bottom: 1px solid #EFEFEF;
+}
+.trabalhos .projetos ul li a {
+  color: #959595;
+  text-decoration: none;
+}
+.trabalhos .projetos ul li a:hover {
+  text-decoration: underline;
+  color: #959595;
+}
+
 .contato {
   padding: 86px 48px 48px;
   display: flex;

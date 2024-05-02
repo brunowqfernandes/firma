@@ -137,6 +137,33 @@ body.loading {
     }
 }
 
+.trabalhos {
+    padding: 86px 48px 48px;
+    display: flex;
+    .fotos {
+        flex: 2;
+    }
+    .projetos {
+        flex: 1;
+        max-width: 588px;
+        ul {
+            list-style-type: none;
+            font-family: $font2;
+            li {
+                border-bottom: 1px solid #EFEFEF;
+                a {
+                    color: #959595;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #959595;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .contato {
     padding: 86px 48px 48px;
     display: flex;
