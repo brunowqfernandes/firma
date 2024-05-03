@@ -19,6 +19,7 @@
         <?php
         // Obtemos o ID do post atual, que é um cliente
         $cliente_id = get_the_ID();
+        echo $cliente_id;
 
         // Argumentos para a consulta de projetos relacionados
         $args = array(
@@ -27,8 +28,8 @@
             'meta_query'     => array(
                 array(
                     'key'     => 'cliente', // Certifique-se de substituir pela chave correta do campo ACF
-                    'value'   => '"' . $cliente_id . '"',
-                    'compare' => 'LIKE'
+                    'value'   => $cliente_id,
+                    'compare' => '='
                 )
             )
         );
