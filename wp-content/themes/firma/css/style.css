@@ -505,6 +505,7 @@ main .titulo-pagina {
   .trabalhos {
     padding-top: 220px;
     flex-direction: column;
+    gap: 15px;
   }
 }
 .trabalhos .fotos {

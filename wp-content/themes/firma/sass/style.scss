@@ -217,6 +217,7 @@ main {
     @media (max-width: 767px) {
         padding-top: 220px;
         flex-direction: column;
+        gap: 15px;
     }
     .fotos {
         flex: 2;
