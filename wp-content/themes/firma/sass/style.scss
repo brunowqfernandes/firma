@@ -102,6 +102,9 @@ main {
     .titulo-pagina {
         position: absolute;
         bottom: calc(100% - 88px);
+        font-size: 30px;
+        font-weight: 700;
+        font-family: $font2;
     }
 }
 
