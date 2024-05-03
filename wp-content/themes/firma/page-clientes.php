@@ -9,6 +9,7 @@
 </style>
 
 <main class="clientes">
+    <h2 class="titulo-pagina"><?php the_title()?></h2>
     <div class="clientes-wrapper">
         <?php
             $the_query = new WP_Query('post_type=cliente&posts_per_page=-1');

@@ -9,6 +9,7 @@
 </style>
 
 <main class="time">
+    <h2 class="titulo-pagina"><?php the_title()?></h2>
     <div class="swiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper" data-swiper-autoplay="false">

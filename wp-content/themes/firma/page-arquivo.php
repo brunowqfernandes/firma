@@ -9,7 +9,6 @@
 </style>
 
 <main class="trabalhos">
-  <h2 class="titulo-pagina">Projetos</h2>
     <?php
         $the_query = new WP_Query('post_type=projeto');
         if ( $the_query->have_posts() ) {
