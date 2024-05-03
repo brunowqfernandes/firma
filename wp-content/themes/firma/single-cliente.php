@@ -50,7 +50,7 @@
                                 $the_query->the_post();
                     ?>
                                 <li>
-                                    <a href="<?php echo get_the_permalink()?>"><?php echo get_field('cliente')->post_title . ', ' . get_the_title()?></a>
+                                    <a href="<?php echo get_the_permalink()?>"><?php echo get_the_title()?></a>
                                 </li>
                     <?php 
                             }
