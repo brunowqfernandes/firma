@@ -131,6 +131,7 @@ main .titulo-pagina {
 @media (max-width: 767px) {
   main .titulo-pagina {
     font-size: 20px;
+    top: 56px;
   }
 }
 
@@ -207,7 +208,8 @@ main .titulo-pagina {
 }
 @media (max-width: 767px) {
   .trabalho {
-    padding-top: 220px;
+    padding-top: 120px;
+    padding-left: 24px;
     flex-direction: column;
   }
 }
@@ -559,7 +561,8 @@ main .titulo-pagina {
 }
 @media (max-width: 767px) {
   .trabalhos {
-    padding-top: 220px;
+    padding-top: 120px;
+    padding-left: 24px;
     flex-direction: column;
     gap: 15px;
   }
@@ -649,8 +652,10 @@ main .titulo-pagina {
 }
 @media (max-width: 767px) {
   .time .descricao {
-    max-height: 50vh;
-    padding-top: 220px;
+    max-height: 30vh;
+    padding-top: 0;
+    padding-left: 24px;
+    margin-top: 120px;
     font-size: 20px;
   }
 }
@@ -680,6 +685,12 @@ main .titulo-pagina {
 .clientes {
   padding: 146px 160px 48px 48px;
   max-width: 1000px;
+}
+@media (max-width: 767px) {
+  .clientes {
+    padding-top: 120px;
+    padding-left: 24px;
+  }
 }
 .clientes .clientes-wrapper {
   display: flex;
