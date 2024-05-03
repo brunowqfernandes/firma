@@ -502,6 +502,7 @@ body.loading .hero {
 .trabalhos .projetos ul li a:hover {
   text-decoration: underline;
   color: #959595;
+  font-weight: 500;
 }
 
 .time {
