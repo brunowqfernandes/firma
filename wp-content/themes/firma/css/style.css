@@ -36,16 +36,18 @@ body.loading .hero {
   color: #000;
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 8px;
-}
-*::-webkit-scrollbar-track {
-  background-color: #959595;
-  border-radius: 4px;
+@media (min-width: 860px) {
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: #959595;
+    border-radius: 4px;
+  }
 }
 
 .menu-wrapper {
@@ -114,6 +116,7 @@ main .titulo-pagina {
 .hero .texto-home {
   position: relative;
   z-index: 100;
+  padding: 0 15px;
 }
 .hero .loading-wrapper {
   background-color: #fff;
@@ -136,6 +139,11 @@ main .titulo-pagina {
   position: absolute;
   z-index: -1;
 }
+.hero .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .hero .swiper .swiper-slide::before {
   content: "";
   position: absolute;
@@ -151,10 +159,20 @@ main .titulo-pagina {
   padding: 86px 160px 48px 48px;
   display: flex;
 }
+@media (max-width: 767px) {
+  .trabalho {
+    flex-direction: column;
+  }
+}
 .trabalho .fotos {
   flex: 2;
   max-width: 1000px;
   padding-right: 30px;
+}
+@media (max-width: 767px) {
+  .trabalho .fotos {
+    order: 2;
+  }
 }
 .trabalho .fotos img {
   width: 100%;
