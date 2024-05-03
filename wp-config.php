@@ -20,16 +20,16 @@
 
 // ** Configurações do banco de dados - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'hostcomb_firma' );
+define( 'DB_NAME', 'estudiofirma' );
 
 /** Usuário do banco de dados MySQL */
-define( 'DB_USER', 'hostcomb_firma' );
+define( 'DB_USER', 'estudiofirma' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', 'oito@meia' );
+define( 'DB_PASSWORD', '3studi0Firm4' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'mysql.estudiofirma.com.br' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8mb4' );
