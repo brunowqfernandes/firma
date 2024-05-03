@@ -10,7 +10,7 @@
 
 <main class="trabalhos">
     <?php while (have_posts()) : the_post(); ?>
-        <h1><?php the_title(); ?></h1>
+        <h2><?php the_title(); ?></h2>
         <?php
         // Obtemos o ID do post atual, que é um cliente
         $cliente_id = get_the_ID();
