@@ -148,6 +148,9 @@ main {
         position: absolute;
         z-index: -1;
         .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
             &::before {
                 content: '';
                 position: absolute;
