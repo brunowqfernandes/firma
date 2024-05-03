@@ -574,6 +574,14 @@ main .titulo-pagina {
 .clientes {
   padding: 86px 160px 48px 48px;
 }
+.clientes .clientes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clientes .clientes-wrapper a {
+  flex: 1 1 25%;
+  padding: 0 16px;
+}
 
 .contato {
   padding: 86px 48px 48px;
