@@ -294,11 +294,14 @@ main {
 
 .clientes {
     padding: 86px 160px 48px 48px;
+    max-width: 1000px;
     .clientes-wrapper {
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
         a {
             flex: 1 1 25%;
+            max-width: 25%;
             padding: 0 16px;
         }
     }
