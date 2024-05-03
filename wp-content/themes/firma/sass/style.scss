@@ -207,6 +207,7 @@ main {
     @media (max-width: 767px) {
         padding-top: 120px;
         padding-left: 24px;
+        padding-right: 16px;
         flex-direction: column;
     }
     .fotos {
@@ -215,6 +216,7 @@ main {
         padding-right: 30px;
         @media (max-width: 767px) {
             order: 2;
+            padding-right: 0;
         }
         img {
             width: 100%;
@@ -257,6 +259,7 @@ main {
     @media (max-width: 767px) {
         padding-top: 120px;
         padding-left: 24px;
+        padding-right: 16px;
         flex-direction: column;
         gap: 15px;
     }
@@ -266,6 +269,7 @@ main {
         padding-right: 30px;
         @media (max-width: 767px) {
             order: 2;
+            padding-right: 0;
         }
         .foto-projeto {
             display: none;
