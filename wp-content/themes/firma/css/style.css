@@ -722,6 +722,12 @@ main .titulo-pagina {
   flex-direction: column;
   height: 100vh;
 }
+@media (max-width: 767px) {
+  .contato {
+    padding-top: 120px;
+    padding-left: 24px;
+  }
+}
 .contato .map {
   margin-bottom: 74px;
   flex: 1;
