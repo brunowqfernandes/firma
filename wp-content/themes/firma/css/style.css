@@ -92,7 +92,7 @@ main {
 }
 main .titulo-pagina {
   position: absolute;
-  bottom: calc(100% - 88px);
+  top: 88px;
   font-size: 30px;
   font-weight: 700;
   font-family: "Neue Haas Grotesk Display";
@@ -156,7 +156,7 @@ main .titulo-pagina {
 }
 
 .trabalho {
-  padding: 86px 160px 48px 48px;
+  padding: 146px 160px 48px 48px;
   display: flex;
 }
 @media (max-width: 767px) {
@@ -194,7 +194,7 @@ main .titulo-pagina {
 }
 
 .trabalhos {
-  padding: 86px 160px 48px 48px;
+  padding: 146px 160px 48px 48px;
   display: flex;
 }
 .trabalhos:not(:has(.projetos li:hover)) .foto-projeto:first-child {
@@ -548,6 +548,11 @@ main .titulo-pagina {
 .time .swiper .swiper-slide > div {
   flex: 1 1 50%;
 }
+@media (max-width: 767px) {
+  .time .swiper .swiper-slide {
+    flex-direction: column;
+  }
+}
 .time .swiper .swiper-button-prev,
 .time .swiper .swiper-button-next {
   color: #fff;
@@ -563,13 +568,16 @@ main .titulo-pagina {
   font-family: "Times New Roman";
   font-weight: 700;
   font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 86px 48px 48px;
+  padding: 146px 48px 48px;
   max-height: 80vh;
   margin: auto 0;
   overflow-y: auto;
+}
+@media (max-width: 767px) {
+  .time .descricao {
+    max-height: 50vh;
+    padding-top: 220px;
+  }
 }
 .time .foto {
   position: relative;
@@ -590,7 +598,7 @@ main .titulo-pagina {
 }
 
 .clientes {
-  padding: 86px 160px 48px 48px;
+  padding: 146px 160px 48px 48px;
   max-width: 1000px;
 }
 .clientes .clientes-wrapper {
@@ -602,6 +610,9 @@ main .titulo-pagina {
   flex: 1 1 25%;
   max-width: 25%;
   padding: 0 16px;
+}
+.clientes .clientes-wrapper a img {
+  width: 100%;
 }
 
 .contato {

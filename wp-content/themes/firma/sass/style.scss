@@ -103,7 +103,7 @@ main {
     position: relative;
     .titulo-pagina {
         position: absolute;
-        bottom: calc(100% - 88px);
+        top: 88px;
         font-size: 30px;
         font-weight: 700;
         font-family: $font2;
@@ -169,7 +169,7 @@ main {
 }
 
 .trabalho {
-    padding: 86px 160px 48px 48px;
+    padding: 146px 160px 48px 48px;
     display: flex;
     @media (max-width: 767px) {
         flex-direction: column;
@@ -203,7 +203,7 @@ main {
 }
 
 .trabalhos {
-    padding: 86px 160px 48px 48px;
+    padding: 146px 160px 48px 48px;
     display: flex;
     &:not(:has(.projetos li:hover)) .foto-projeto:first-child {
         display: block;
@@ -259,6 +259,9 @@ main {
             > div {
                 flex: 1 1 50%;
             }
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
         }
         .swiper-button-prev,
         .swiper-button-next {
@@ -276,14 +279,14 @@ main {
         font-family: $font1;
         font-weight: 700;
         font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 86px 48px 48px;
+        padding: 146px 48px 48px;
         max-height: 80vh;
         margin: auto 0;
         overflow-y: auto;
-        
+        @media (max-width: 767px) {
+            max-height: 50vh;
+            padding-top: 220px;
+        }
     }
     .foto {
         position: relative;
@@ -305,7 +308,7 @@ main {
 }
 
 .clientes {
-    padding: 86px 160px 48px 48px;
+    padding: 146px 160px 48px 48px;
     max-width: 1000px;
     .clientes-wrapper {
         display: flex;
@@ -315,6 +318,9 @@ main {
             flex: 1 1 25%;
             max-width: 25%;
             padding: 0 16px;
+            img {
+                width: 100%;
+            }
         }
     }
 }

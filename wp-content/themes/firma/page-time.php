@@ -6,6 +6,11 @@
   header .custom-logo-link {
     filter: brightness(0) saturate(0);
   }
+  @media (max-width: 568px) {
+    header .menu-toggle {
+        filter: brightness(0) saturate(0);
+      }
+  }
 </style>
 
 <main class="time">
