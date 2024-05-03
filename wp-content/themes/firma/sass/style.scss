@@ -41,7 +41,23 @@ body.loading {
         color: #000;
     }
 }
-
+* {
+    @media (min-width: 860px) {
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #000;
+            border-radius: 8px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: #959595;
+            border-radius: 4px;
+        }
+    }
+}
 
 .menu-wrapper {
     position: fixed;
@@ -193,11 +209,7 @@ main {
     &:not(:has(.projetos li:hover)) .foto-projeto:first-child {
         display: block;
     }
-    @for $i from 1 through 100 {
-        &:has(.projetos li:nth-child(#{$i}):hover) .foto-projeto:nth-child(#{$i}) {
-            display: block;
-        }
-    }
+    
     @media (max-width: 767px) {
         padding-top: 220px;
         flex-direction: column;
