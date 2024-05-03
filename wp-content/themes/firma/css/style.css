@@ -7,9 +7,20 @@ header {
   width: 100%;
   z-index: 99;
 }
+@media (max-width: 767px) {
+  header {
+    padding: 24px 24px 6px;
+  }
+}
 header .custom-logo-link {
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
+}
+@media (max-width: 767px) {
+  header .custom-logo-link img {
+    width: 100px;
+    height: auto;
+  }
 }
 header .menu-toggle {
   position: absolute;
@@ -19,6 +30,16 @@ header .menu-toggle {
   border: 0;
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
+}
+@media (max-width: 767px) {
+  header .menu-toggle {
+    width: 48px;
+    top: 16px;
+    right: 16px;
+  }
+  header .menu-toggle img {
+    width: 100%;
+  }
 }
 header .menu-toggle:active, header .menu-toggle:focus, header .menu-toggle:focus-visible {
   outline: none;
@@ -78,6 +99,11 @@ body.loading .hero {
   font-size: 34px;
   font-family: "Neue Haas Grotesk Display";
 }
+@media (max-width: 767px) {
+  .menu-wrapper ul li a {
+    font-size: 20px;
+  }
+}
 .menu-wrapper ul li + li {
   margin-top: 4px;
 }
@@ -85,6 +111,11 @@ body.loading .hero {
   font-weight: 400;
   color: #fff;
   font-size: 24px;
+}
+@media (max-width: 767px) {
+  .menu-wrapper .menu-footer {
+    font-size: 16px;
+  }
 }
 
 main {
