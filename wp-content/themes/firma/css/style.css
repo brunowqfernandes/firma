@@ -694,6 +694,7 @@ main .titulo-pagina {
   .clientes {
     padding-top: 120px;
     padding-left: 24px;
+    padding-right: 16px;
   }
 }
 .clientes .clientes-wrapper {
@@ -705,6 +706,11 @@ main .titulo-pagina {
   flex: 1 1 25%;
   max-width: 25%;
   padding: 0 16px;
+}
+@media (max-width: 767px) {
+  .clientes .clientes-wrapper a {
+    padding: 0 8px;
+  }
 }
 .clientes .clientes-wrapper a img {
   width: 100%;

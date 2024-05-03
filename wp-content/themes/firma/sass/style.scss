@@ -376,6 +376,7 @@ main {
     @media (max-width: 767px) {
         padding-top: 120px;
         padding-left: 24px;
+        padding-right: 16px;
     }
     .clientes-wrapper {
         display: flex;
@@ -385,6 +386,9 @@ main {
             flex: 1 1 25%;
             max-width: 25%;
             padding: 0 16px;
+            @media (max-width: 767px) {
+                padding: 0 8px;
+            }
             img {
                 width: 100%;
             }
