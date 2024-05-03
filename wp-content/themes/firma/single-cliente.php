@@ -53,7 +53,8 @@
                                     <a href="<?php echo get_the_permalink()?>"><?php echo get_the_title()?></a>
                                 </li>
                     <?php 
-                            }
+                            } 
+                            wp_reset_postdata();
                     ?>
                 </ul>
             </div>
