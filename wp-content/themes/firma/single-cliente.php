@@ -9,8 +9,13 @@
 </style>
 
 <main class="trabalhos">
+<?php get_header(); ?>
+
+<div class="content">
     <?php while (have_posts()) : the_post(); ?>
-        <h2><?php the_title(); ?></h2>
+        <h1><?php the_title(); ?></h1>
+        <p><?php the_content(); ?></p>
+
         <?php
         // Obtemos o ID do post atual, que é um cliente
         $cliente_id = get_the_ID();
@@ -32,34 +37,18 @@
         $projetos = new WP_Query($args);
 
         if ($projetos->have_posts()) : ?>
-            <div class="fotos">
-                <?php
-                  while ( $projetos->have_posts() ) {
-                      $projetos->the_post();
-                ?>
-                      <img class="foto-projeto" src="<?php echo get_field('imagem_banner')?>">
-                <?php 
-                  }
-                ?>
-                            
-            </div>
-            <div class="projetos">
-                <ul>
-                    <?php
-                            while ( $projetos->have_posts() ) {
-                                $projetos->the_post();
-                    ?>
-                                <li>
-                                    <a href="<?php echo get_the_permalink()?>"><?php echo get_the_title()?></a>
-                                </li>
-                    <?php 
-                            } 
-                            wp_reset_postdata();
-                    ?>
-                </ul>
-            </div>
+            <h2>Projetos Relacionados</h2>
+            <ul>
+                <?php while ($projetos->have_posts()) : $projetos->the_post(); ?>
+                    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                <?php endwhile; wp_reset_postdata(); ?>
+            </ul>
         <?php endif; ?>
     <?php endwhile; ?>
+</div>
+
+<?php get_footer(); ?>
+
 </main>
 
 <?php
