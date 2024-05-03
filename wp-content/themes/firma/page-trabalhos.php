@@ -15,12 +15,12 @@
     ?>
             <div class="fotos">
                 <?php
-                        while ( $the_query->have_posts() ) {
-                            $the_query->the_post();
+                  while ( $the_query->have_posts() ) {
+                      $the_query->the_post();
                 ?>
-                            <img class="foto-projeto" src="<?php echo get_field('imagem_banner')?>">
+                      <img class="foto-projeto" src="<?php echo get_field('imagem_banner')?>">
                 <?php 
-                        }
+                  }
                 ?>
                             
             </div>
@@ -31,7 +31,7 @@
                                 $the_query->the_post();
                     ?>
                                 <li>
-                                    <a href="<?php echo get_the_permalink()?>"><?php echo get_the_title()?></a>
+                                    <a href="<?php echo get_the_permalink()?>"><?php echo get_field('cliente')->post_title . ', ' . get_the_title()?></a>
                                 </li>
                     <?php 
                             }
