@@ -14,3 +14,4 @@ jobs:
         username: estudiofirma
         password: 3studi0Firm4
         server-dir: estudiofirma.com.br/
+        timeout: 1800000
