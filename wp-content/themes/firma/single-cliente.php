@@ -34,8 +34,8 @@
         if ($projetos->have_posts()) : ?>
             <div class="fotos">
                 <?php
-                  while ( $the_query->have_posts() ) {
-                      $the_query->the_post();
+                  while ( $projetos->have_posts() ) {
+                      $projetos->the_post();
                 ?>
                       <img class="foto-projeto" src="<?php echo get_field('imagem_banner')?>">
                 <?php 
@@ -46,8 +46,8 @@
             <div class="projetos">
                 <ul>
                     <?php
-                            while ( $the_query->have_posts() ) {
-                                $the_query->the_post();
+                            while ( $projetos->have_posts() ) {
+                                $projetos->the_post();
                     ?>
                                 <li>
                                     <a href="<?php echo get_the_permalink()?>"><?php echo get_the_title()?></a>
