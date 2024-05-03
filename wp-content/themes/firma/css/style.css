@@ -161,6 +161,7 @@ main .titulo-pagina {
 }
 @media (max-width: 767px) {
   .trabalho {
+    padding-top: 220px;
     flex-direction: column;
   }
 }
@@ -500,10 +501,21 @@ main .titulo-pagina {
 .trabalhos:has(.projetos li:nth-child(100):hover) .foto-projeto:nth-child(100) {
   display: block;
 }
+@media (max-width: 767px) {
+  .trabalhos {
+    padding-top: 220px;
+    flex-direction: column;
+  }
+}
 .trabalhos .fotos {
   flex: 2;
   max-width: 1000px;
   padding-right: 30px;
+}
+@media (max-width: 767px) {
+  .trabalhos .fotos {
+    order: 2;
+  }
 }
 .trabalhos .fotos .foto-projeto {
   display: none;
