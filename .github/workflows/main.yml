@@ -10,7 +10,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: walker.dreamhost.com
+        server: iad1-shared-b7-15.dreamhost.com
         username: estudiofirma
         password: 3studi0Firm4
         server-dir: studiofirma.com.br/site24/
