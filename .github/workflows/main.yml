@@ -13,5 +13,5 @@ jobs:
         server: walker.dreamhost.com
         username: estudiofirma
         password: 3studi0Firm4
-        server-dir: studiofirma.com.br/site24
+        server-dir: studiofirma.com.br/site24/
         timeout: 1800000
