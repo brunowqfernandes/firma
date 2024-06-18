@@ -12,6 +12,6 @@ jobs:
       with:
         server: ftp.host86.com.br
         username: hostcomb
-        password: G+wr$703=ChU
+        password: G+wr$7O3=ChU
         server-dir: clientes24/firma/
         timeout: 1800000
