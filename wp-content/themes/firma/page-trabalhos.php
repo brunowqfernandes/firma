@@ -11,7 +11,17 @@
 <main class="trabalhos">
   <h2 class="titulo-pagina">Projetos</h2>
     <?php
-        $the_query = new WP_Query('post_type=projeto');
+        $the_query = new WP_Query( array(
+          'post_type' => 'projeto',
+          'tax_query' => array(
+              array (
+                  'taxonomy' => 'cat_projetos',
+                  'field' => 'slug',
+                  'terms' => 'arquivo',
+                  'operator' => 'NOT IN'
+              )
+          ),
+      ) );
         if ( $the_query->have_posts() ) {
     ?>
             <div class="fotos">
