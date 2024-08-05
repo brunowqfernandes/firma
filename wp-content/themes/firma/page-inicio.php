@@ -18,8 +18,8 @@
             while ( $the_query->have_posts() ) {
               $the_query->the_post();
         ?>
-            <div class="swiper-slide" style="background-image: url(<?php echo get_field('imagem_banner');?>)">
-              <a href="<?php echo get_the_permalink()?>"></a>
+            <div class="swiper-slide" onclick="document.querySelector('.menu-wrapper').classList.toggle('open');" style="background-image: url(<?php echo get_field('imagem_banner');?>)">
+              <!-- <a href="<?php echo get_the_permalink()?>"></a> -->
             </div>
         <?php
             }

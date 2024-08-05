@@ -13,6 +13,7 @@ header {
   }
 }
 header .custom-logo-link {
+  transform: scale(0.7);
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
 }
@@ -71,6 +72,10 @@ body.loading .hero {
   }
 }
 
+.home:has(.menu-wrapper.open) .menu-toggle {
+  filter: invert(1);
+}
+
 .menu-wrapper {
   position: fixed;
   inset: 0;
@@ -83,6 +88,10 @@ body.loading .hero {
   flex-direction: column;
   justify-content: space-between;
   z-index: 10;
+}
+.home .menu-wrapper {
+  background-color: #fff;
+  color: #000;
 }
 .menu-wrapper.open {
   clip-path: circle(200% at 100% 0%);
@@ -144,7 +153,7 @@ main .titulo-pagina {
   background-color: #000;
   color: #fff;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 21px;
   font-family: "Times New Roman";
   line-height: 1;
   z-index: 1;
