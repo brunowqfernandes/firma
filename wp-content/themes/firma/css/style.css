@@ -13,9 +13,12 @@ header {
   }
 }
 header .custom-logo-link {
-  transform: scale(0.7);
   transition: all 800ms ease-in-out;
   transition-delay: 300ms;
+}
+header .custom-logo-link img {
+  width: 150px;
+  height: auto;
 }
 @media (max-width: 767px) {
   header .custom-logo-link img {
@@ -50,6 +53,12 @@ header .menu-toggle:active, header .menu-toggle:focus, header .menu-toggle:focus
 body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-logo-link {
   filter: none;
 }
+body:has(.menu-wrapper.open) .menu-toggle {
+  width: 50px;
+}
+body:has(.menu-wrapper.open) .menu-toggle img {
+  width: 100%;
+}
 
 body.loading header .custom-logo-link, body.loading header .menu-toggle {
   filter: brightness(0) saturate(0);
@@ -72,7 +81,7 @@ body.loading .hero {
   }
 }
 
-.home:has(.menu-wrapper.open) .menu-toggle {
+.home:has(.menu-wrapper.open) .menu-toggle, .home:has(.menu-wrapper.open) .custom-logo-link {
   filter: invert(1);
 }
 
@@ -81,7 +90,7 @@ body.loading .hero {
   inset: 0;
   background: #000;
   color: #fff;
-  padding: 166px 48px 48px;
+  padding: 80px 48px 48px;
   clip-path: circle(0% at 100% 0%);
   transition: all 1200ms ease-in-out;
   display: flex;
@@ -105,7 +114,7 @@ body.loading .hero {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 28px;
   font-family: "Neue Haas Grotesk Display";
 }
 @media (max-width: 767px) {
