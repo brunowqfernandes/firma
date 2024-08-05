@@ -31,7 +31,7 @@ window.onload = (e) => {
     // Optional parameters
     loop: true,
     autoplay: autoplay,
-    effect: 'none',
+    effect: 'fade',
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
