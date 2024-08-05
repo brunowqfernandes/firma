@@ -31,7 +31,8 @@ window.onload = (e) => {
     // Optional parameters
     loop: true,
     autoplay: autoplay,
-    effect: 'fade',
+    speed: 0, // Remove a animação da transição
+    cssMode: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
