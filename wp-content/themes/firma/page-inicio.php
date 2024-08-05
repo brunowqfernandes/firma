@@ -3,7 +3,7 @@
 ?>
 
 <main>
-  <div class="hero" onclick="document.querySelector('.menu-wrapper').classList.toggle('open');">
+  <div class="hero" onclick="document.querySelector('.menu-wrapper').classList.toggle('open');" >
     <div class="loading-wrapper">
       <span id="loading-text">0%</span>
     </div>
