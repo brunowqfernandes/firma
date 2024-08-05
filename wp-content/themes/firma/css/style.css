@@ -190,6 +190,7 @@ main .titulo-pagina {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: none !important;
 }
 .hero .swiper .swiper-slide::before {
   content: "";
