@@ -125,7 +125,7 @@ body:has(.menu-wrapper.open) .menu-toggle, body:has(.menu-wrapper.open) .custom-
 }
 .menu-wrapper .menu-footer {
   font-weight: 400;
-  color: #fff;
+  color: #000;
   font-size: 24px;
 }
 @media (max-width: 767px) {
@@ -703,7 +703,6 @@ main .titulo-pagina {
 
 .clientes {
   padding: 146px 160px 48px 48px;
-  max-width: 1000px;
 }
 @media (max-width: 767px) {
   .clientes {
@@ -718,8 +717,7 @@ main .titulo-pagina {
   justify-content: flex-start;
 }
 .clientes .clientes-wrapper a {
-  flex: 1 1 25%;
-  max-width: 25%;
+  flex: 1;
   padding: 0 16px;
 }
 @media (max-width: 767px) {

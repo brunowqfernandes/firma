@@ -133,7 +133,7 @@ body:has(.menu-wrapper.open){
     }
     .menu-footer {
         font-weight: 400;
-        color: #fff;
+        color: #000;
         font-size: 24px;
         @media (max-width: 767px) {
             font-size: 16px;
@@ -392,7 +392,6 @@ main {
 
 .clientes {
     padding: 146px 160px 48px 48px;
-    max-width: 1000px;
     @media (max-width: 767px) {
         padding-top: 120px;
         padding-left: 24px;
@@ -403,8 +402,7 @@ main {
         flex-wrap: wrap;
         justify-content: flex-start;
         a {
-            flex: 1 1 25%;
-            max-width: 25%;
+            flex: 1;
             padding: 0 16px;
             @media (max-width: 767px) {
                 padding: 0 8px;
