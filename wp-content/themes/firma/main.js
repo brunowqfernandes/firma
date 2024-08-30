@@ -24,8 +24,7 @@ window.onload = (e) => {
     menuWrapper.classList.toggle('open');
   })
   const autoplay = (loading) ? {
-    delay: 100,
-    pauseOnMouseEnter: true,
+    delay: 100
   } : false;
   const swiper = new Swiper('.swiper', {
     // Optional parameters
