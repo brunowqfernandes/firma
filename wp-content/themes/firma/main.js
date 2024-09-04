@@ -19,13 +19,17 @@ window.onload = (e) => {
     }, 20);
   }
   const menuButton = document.querySelector('.menu-toggle');
+  const customLogoLink = document.querySelector('.custom-logo-link');
   const menuWrapper = document.querySelector('.menu-wrapper');
   menuButton.addEventListener('click', function () {
     menuWrapper.classList.toggle('open');
   })
+  customLogoLink.addEventListener('click', function (e) {
+    e.preventDefault()
+    menuWrapper.classList.toggle('open');
+  })
   const autoplay = (loading) ? {
-    delay: 100,
-    pauseOnMouseEnter: true,
+    delay: 100
   } : false;
   const swiper = new Swiper('.swiper', {
     // Optional parameters
